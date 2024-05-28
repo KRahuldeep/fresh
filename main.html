@@ -12,8 +12,31 @@
     </style>
 </head>
 <body>
-    <button>&#9776;</button>
-    <h1>PILOT MODE...</h1>
+    <button><a href="threelines.html" class="button">&#9776;</a></button>
+    
+    <h1>PILOT MODE...
+        
+        <div class="switch">
+            <div class="toggle">
+                <div class=""toggle-button" onclick="Animatedtoggle()"></div>
+            </div>
+            <div class="text">OFF</div>
+        </div>
+        <script>
+            let toggle = document.querySelector(".toggle");
+            let text = document.querySelector(".text");
+            function Animatedtoggle(){
+                toggle.classList.toggle("active");
+                if(toggle.classList.contains("active")){
+                    text.innerHTML = "ON";
+                }
+                else{
+                    Text.innerHTML="OFF"
+                }
+            }
+        </script>
+
+</h1>
     <p>A website created by me.</p>
 </body>
 </html>
